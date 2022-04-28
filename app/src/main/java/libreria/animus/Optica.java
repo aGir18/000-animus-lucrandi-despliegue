@@ -1,4 +1,4 @@
-package animus.lucrandi.lib;
+package libreria.animus;
 
 public class Optica extends Negocio {
   
@@ -19,7 +19,7 @@ public class Optica extends Negocio {
 
   @Override
   public String toString() {
-    return "Soy la óptica con nombre " + getNombre() + " y NIF " + getNif();
+    return "Soy la ï¿½ptica con nombre " + getNombre() + " y NIF " + getNif();
   }
   
 }

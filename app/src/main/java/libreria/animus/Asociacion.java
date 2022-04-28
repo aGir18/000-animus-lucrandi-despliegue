@@ -1,4 +1,4 @@
-package animus.lucrandi.lib;
+package libreria.animus;
 
 import java.util.List;
 

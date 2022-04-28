@@ -1,4 +1,4 @@
-package animus.lucrandi.lib;
+package libreria.animus;
 
 public class Farmacia extends Negocio {
 
