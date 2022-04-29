@@ -1,15 +1,18 @@
 package libreria.animus;
 
-public class Optica extends Negocio {
+public class Optica extends Negocio implements OpticaIntLib {
   
   private int numeroAutorefractometros;
   
+  @Override
   public int getNumeroAutorefractometros() {
-    return numeroAutorefractometros;
+  	return numeroAutorefractometros;
   }
   
+  @Override
   public void setNumeroAutorefractometros(int numeroAutorefractometros) {
-    this.numeroAutorefractometros = numeroAutorefractometros;
+  	this.numeroAutorefractometros = numeroAutorefractometros;
+  	
   }
 
   public Optica(String nombre, String nif, int numeroAutorefractometros) {
@@ -19,7 +22,7 @@ public class Optica extends Negocio {
 
   @Override
   public String toString() {
-    return "Soy la �ptica con nombre " + getNombre() + " y NIF " + getNif();
+    return "Soy la Optica con nombre " + getNombre() + " y NIF " + getNif();
   }
   
 }
