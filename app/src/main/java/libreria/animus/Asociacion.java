@@ -2,14 +2,15 @@ package libreria.animus;
 
 import java.util.List;
 
-public class Asociacion {
+public class Asociacion implements AsociacionIntLib {
 
 	private String nombre;
 	private List<Negocio> negociosAsociacion;
 	
-	public String getNombre() {
-		return nombre;
-	}
+  @Override
+  public String getNombre() {
+    return nombre;
+  }
 	
 	public List<Negocio> getNegociosAsociacion() {
 		return negociosAsociacion;
