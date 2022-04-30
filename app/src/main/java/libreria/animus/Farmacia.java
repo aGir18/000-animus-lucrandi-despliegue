@@ -1,15 +1,13 @@
 package libreria.animus;
 
-public class Farmacia extends Negocio implements FarmaciaIntLib {
+public class Farmacia extends Negocio {
 
 	private int numeroPuntosSigre;
 	
-	@Override
 	public int getNumeroPuntosSigre() {
 		return numeroPuntosSigre;
 	}
 	
-	@Override
 	public void setNumeroPuntosSigre(int numeroPuntosSigre) {
     this.numeroPuntosSigre = numeroPuntosSigre;
 	}

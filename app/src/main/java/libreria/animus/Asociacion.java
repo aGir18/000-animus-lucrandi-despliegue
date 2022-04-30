@@ -2,12 +2,12 @@ package libreria.animus;
 
 import java.util.List;
 
-public class Asociacion implements AsociacionIntLib {
+public class Asociacion {
 
+  private long id;
 	private String nombre;
 	private List<Negocio> negociosAsociacion;
 	
-  @Override
   public String getNombre() {
     return nombre;
   }
@@ -16,12 +16,20 @@ public class Asociacion implements AsociacionIntLib {
 		return negociosAsociacion;
 	}
 	
+	public long getId() {
+    return id;
+  }
+	
 	public void setNombre(String nombre) {
     this.nombre = nombre;
   }
 	
 	public void setNegociosAsociacion(List<Negocio> negociosAsociacion) {
     this.negociosAsociacion = negociosAsociacion;
+  }
+	
+	public void setId(long id) {
+    this.id = id;
   }
 
 	public Asociacion(String nombre, List<Negocio> negocios) {
