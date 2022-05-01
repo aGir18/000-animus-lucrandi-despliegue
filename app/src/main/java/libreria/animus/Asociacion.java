@@ -31,12 +31,15 @@ public class Asociacion {
 	public void setNegociosAsociacion(List<Negocio> negociosAsociacion) {
     this.negociosAsociacion = negociosAsociacion;
   }
-
-	public Asociacion(String nombre) {
-		this.nombre = nombre;
-	}
 	
-	@Override
+	public Asociacion(long id, String nombre, List<Negocio> negociosAsociacion) {
+    super();
+    this.id = id;
+    this.nombre = nombre;
+    this.negociosAsociacion = negociosAsociacion;
+  }
+
+  @Override
 	public String toString() {
 		return "La asociacion se llama asociacion " + getNombre() + " y tiene " + 
 	getNegociosAsociacion().size() + " negocios.";
