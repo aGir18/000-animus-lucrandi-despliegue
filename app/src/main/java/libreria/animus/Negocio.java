@@ -5,6 +5,7 @@ public abstract class Negocio {
   private long id;
 	private String nombre;
 	private String nif;
+	private Asociacion asociacion;
 		
 	public long getId() {
     return id;
@@ -16,6 +17,10 @@ public abstract class Negocio {
   
   public String getNombre() {
     return nombre;
+  }
+  
+  public Asociacion getAsociacion() {
+    return asociacion;
   }
   
   public void setNombre(String nombre) {
@@ -30,6 +35,10 @@ public abstract class Negocio {
     this.id = id;
   }
 
+  public void setAsociacion(Asociacion asociacion) {
+    this.asociacion = asociacion;
+  }
+  
   public Negocio(String nombre, String nif){
 		this.nombre = nombre;
 		this.nif = nif;
