@@ -32,6 +32,10 @@ public class Asociacion {
     this.negociosAsociacion = negociosAsociacion;
   }
 	
+	public void addNegocio(Negocio negocio) {
+	  getNegociosAsociacion().add(negocio);
+	}
+	
 	public Asociacion(long id, String nombre, List<Negocio> negociosAsociacion) {
     super();
     this.id = id;
