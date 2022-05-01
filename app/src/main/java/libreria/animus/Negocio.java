@@ -1,10 +1,16 @@
 package libreria.animus;
 
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
 public abstract class Negocio {
 
   private long id;
 	private String nombre;
 	private String nif;
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "ID_NEGOCIO")
 	private Asociacion asociacion;
 		
 	public String getNombre() {
