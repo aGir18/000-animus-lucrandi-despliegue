@@ -9,8 +9,6 @@ public abstract class Negocio {
   private long id;
 	private String nombre;
 	private String nif;
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "ID_NEGOCIO")
 	private Asociacion asociacion;
 		
 	public String getNombre() {

@@ -10,7 +10,6 @@ public class Asociacion {
 
   private long id;
 	private String nombre;
-  @OneToMany(cascade = CascadeType.ALL, targetEntity = Negocio.class, mappedBy = "asociacion")
 	private List<Negocio> negociosAsociacion;
 	
   public String getNombre() {
