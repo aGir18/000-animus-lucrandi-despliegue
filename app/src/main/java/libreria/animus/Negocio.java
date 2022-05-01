@@ -1,30 +1,21 @@
 package libreria.animus;
 
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-
 public abstract class Negocio {
 
   private long id;
 	private String nombre;
 	private String nif;
-	private Asociacion asociacion;
 		
-	public String getNombre() {
-	  return nombre;
-	}
+	public long getId() {
+    return id;
+  }
 	
   public String getNif() {
     return nif;
-  }  
-
-  public long getId() {
-    return id;
   }
   
-  public Asociacion getAsociacion() {
-    return asociacion;
+  public String getNombre() {
+    return nombre;
   }
   
   public void setNombre(String nombre) {
@@ -38,15 +29,10 @@ public abstract class Negocio {
   public void setId(long id) {
     this.id = id;
   }
-  
-  public void setAsociacion(Asociacion asociacion) {
-    this.asociacion = asociacion;
-  }
 
-  public Negocio(long id, String nombre, String nif, Asociacion asociacion) {
-    this.id = id;
-    this.nombre = nombre;
-    this.nif = nif;
-    this.asociacion = asociacion;
-  }
+  public Negocio(String nombre, String nif){
+		this.nombre = nombre;
+		this.nif = nif;
+	}
+	
 }
