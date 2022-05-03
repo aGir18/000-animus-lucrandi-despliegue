@@ -11,6 +11,8 @@ public class Farmacia extends Negocio {
 	public void setNumeroPuntosSigre(int numeroPuntosSigre) {
     this.numeroPuntosSigre = numeroPuntosSigre;
 	}
+	
+	public Farmacia() {};
 
 	public Farmacia(String nombre, String nif, int numeroPuntosSigre) {
 		super(nombre, nif);

@@ -30,6 +30,8 @@ public abstract class Negocio {
     this.id = id;
   }
   
+  public Negocio() {};
+  
   public Negocio(String nombre, String nif){
 		this.nombre = nombre;
 		this.nif = nif;

@@ -11,6 +11,8 @@ public class Optica extends Negocio {
   public void setNumeroAutorefractometros(int numeroAutorefractometros) {
   	this.numeroAutorefractometros = numeroAutorefractometros;
   }
+  
+  public Optica() {};
 
   public Optica(String nombre, String nif, int numeroAutorefractometros) {
     super(nombre, nif);
