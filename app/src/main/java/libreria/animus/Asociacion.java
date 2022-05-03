@@ -24,6 +24,8 @@ public class Asociacion {
     this.id = id;
   }
 
+	public Asociacion() {};
+	
 	public Asociacion(String nombre) {
 		this.nombre = nombre;
 	}
