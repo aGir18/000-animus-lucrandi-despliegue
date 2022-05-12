@@ -1,8 +1,5 @@
 package libreria.animus;
 
-import java.util.List;
-import java.util.Collection;
-
 public class Asociacion {
 
   private long id;
